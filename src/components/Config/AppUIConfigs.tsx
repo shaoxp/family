@@ -1,14 +1,15 @@
 import FlightIcon from "@mui/icons-material/Flight";
 import CelebrationIcon from "@mui/icons-material/Celebration";
+import FlagIcon from "@mui/icons-material/Flag";
 
 export const BlogTags = {
   travel: {
     icon: <FlightIcon />,
-    name: "Travel",
+    name: "旅行",
   },
   event: {
-    icon: <CelebrationIcon />,
-    name: "Event",
+    icon: <FlagIcon />,
+    name: "事件",
   },
 };
 

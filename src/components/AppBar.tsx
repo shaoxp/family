@@ -61,7 +61,7 @@ export function AppBar(prop: AppProps) {
           noWrap
           sx={{ flexGrow: 1 }}
         >
-          Dashboard
+          勤善正家
         </Typography>
         <IconButton color="inherit">
           <Badge badgeContent={4} color="secondary">

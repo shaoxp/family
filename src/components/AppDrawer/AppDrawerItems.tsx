@@ -4,6 +4,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ListSubheader from "@mui/material/ListSubheader";
 import AssignmentIcon from "@mui/icons-material/Assignment";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import Diversity1Icon from "@mui/icons-material/Diversity1";
 
 import { BlogConfig } from "../Config/BlogsConfig";
 import { BlogTagKeys, BlogTags } from "../Config/AppUIConfigs";
@@ -26,26 +28,20 @@ export const mainListItems = () => {
 
 export const secondaryListItems = (
   <React.Fragment>
-    <ListSubheader component="div" inset>
+    {/* <ListSubheader component="div" inset>
       Saved reports
-    </ListSubheader>
+    </ListSubheader> */}
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <EmojiEventsIcon />
       </ListItemIcon>
-      <ListItemText primary="Current month" />
+      <ListItemText primary="文曲星奖" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <Diversity1Icon />
       </ListItemIcon>
-      <ListItemText primary="Last quarter" />
-    </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
+      <ListItemText primary="家族成员" />
     </ListItemButton>
   </React.Fragment>
 );
