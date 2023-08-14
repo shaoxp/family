@@ -8,6 +8,20 @@ const StyledMarkdown = styled(ReactMarkdown)({
     maxWidth: "100%",
     height: "auto",
   },
+  "& table": {
+    width: "100%",
+    borderCollapse: "collapse",
+    marginTop: "1rem",
+    marginBottom: "1rem",
+  },
+  "& th, & td": {
+    border: "1px solid #ddd",
+    padding: "8px",
+  },
+  "& th": {
+    backgroundColor: "#f2f2f2",
+    textAlign: "left",
+  },
 });
 
 export type MarkdownProps = {

@@ -5,8 +5,9 @@ import { AppGlobalProvider } from "./components/AppGlobalProvider";
 import { AppBar } from "./components/AppBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { CssBaseline, Toolbar } from "@mui/material";
-import { FamilyBlogList } from "./Family/FamilyBlogList";
+import { FamilyBlogList } from "./pages/FamilyBlogList";
 import AppDrawer from "./components/AppDrawer/AppDrawer";
+import { MdViewPage } from "./pages/MdViewPage";
 
 export default function App() {
   const defaultTheme = createTheme();
@@ -33,6 +34,7 @@ export default function App() {
             <Router>
               <Routes>
                 <Route path="/" element={<FamilyBlogList />}></Route>
+                <Route path="/md/*" element={<MdViewPage />} />
               </Routes>
             </Router>
           </Box>
