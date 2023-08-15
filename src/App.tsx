@@ -14,31 +14,33 @@ export default function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <AppGlobalProvider>
-        <Box sx={{ display: "flex" }}>
-          <CssBaseline />
-          <AppBar />
-          <AppDrawer />
-          <Box
-            component="main"
-            sx={{
-              backgroundColor: (theme) =>
-                theme.palette.mode === "light"
-                  ? theme.palette.grey[100]
-                  : theme.palette.grey[900],
-              flexGrow: 1,
-              height: "100vh",
-              overflow: "auto",
-            }}
-          >
-            <Toolbar />
-            <Router>
+        <Router>
+          <Box sx={{ display: "flex" }}>
+            <CssBaseline />
+            <AppBar />
+            <AppDrawer />
+            <Box
+              component="main"
+              sx={{
+                backgroundColor: (theme) =>
+                  theme.palette.mode === "light"
+                    ? theme.palette.grey[100]
+                    : theme.palette.grey[900],
+                flexGrow: 1,
+                height: "100vh",
+                overflow: "auto",
+              }}
+            >
+              <Toolbar />
+
               <Routes>
-                <Route path="/" element={<FamilyBlogList />}></Route>
+                <Route path="/" element={<FamilyBlogList />} />
                 <Route path="/md/*" element={<MdViewPage />} />
+                <Route path="/mem/:tag" element={<FamilyBlogList />} />
               </Routes>
-            </Router>
+            </Box>
           </Box>
-        </Box>
+        </Router>
       </AppGlobalProvider>
       <StickyFooter />
     </ThemeProvider>

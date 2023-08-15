@@ -7,7 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { useAppGlobalProviderContext } from "../AppGlobalProvider";
 import { drawerWidth } from "../AppConsts";
-import { mainListItems, secondaryListItems } from "./AppDrawerItems";
+import { MainListItems, SecondaryListItems } from "./AppDrawerItems";
 
 const StyledDrawer = styled(MuiDrawer, {
   shouldForwardProp: (prop) => prop !== "open",
@@ -53,9 +53,9 @@ export default function AppDrawer() {
       </Toolbar>
       <Divider />
       <List component="nav">
-        {mainListItems()}
+        <MainListItems />
         <Divider sx={{ my: 1 }} />
-        {secondaryListItems}
+        <SecondaryListItems />
       </List>
     </StyledDrawer>
   );
