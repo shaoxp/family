@@ -6,16 +6,16 @@ import ListItemText from "@mui/material/ListItemText";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
 
-import { BlogConfig } from "../Config/BlogsConfig";
-import { BlogTagKeys, BlogTags } from "../Config/AppUIConfigs";
+import { MemosConfig } from "../Config/MemosConfig";
+import { MemoTagKeys, MemoTags } from "../Config/AppUIConfigs";
 import { List } from "@mui/material";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 
 export const MainListItems = () => {
   const navigate = useNavigate();
-  const blogTags = new Set(BlogConfig.blogs.flatMap((blog) => blog.tags));
-  const items = [...blogTags].map((tag) => {
-    const tagConfig = BlogTags[tag as BlogTagKeys];
+  const memoTags = new Set(MemosConfig.memos.flatMap((memo) => memo.tags));
+  const items = [...memoTags].map((tag) => {
+    const tagConfig = MemoTags[tag as MemoTagKeys];
 
     return (
       <ListItemButton onClick={() => navigate(`/mem/${tag}`)}>

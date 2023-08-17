@@ -8,6 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { useAppGlobalProviderContext } from "./AppGlobalProvider";
 import { drawerWidth } from "./AppConsts";
+import { useNavigate } from "react-router-dom";
 
 export interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -35,6 +36,8 @@ export interface AppProps {}
 
 export function AppBar(prop: AppProps) {
   const { drawerOpen, setDrawerOpen } = useAppGlobalProviderContext();
+  const navigate = useNavigate();
+
   return (
     <StyledAppBar position="absolute" open={drawerOpen}>
       <Toolbar
@@ -63,8 +66,11 @@ export function AppBar(prop: AppProps) {
         >
           勤善正德
         </Typography>
-        <IconButton color="inherit">
-          <Badge badgeContent={4} color="secondary">
+        <IconButton
+          color="inherit"
+          onClick={() => navigate("/md/mds/更新历史.md")}
+        >
+          <Badge badgeContent={1} color="secondary">
             <NotificationsIcon />
           </Badge>
         </IconButton>

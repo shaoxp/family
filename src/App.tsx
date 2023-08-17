@@ -5,7 +5,7 @@ import { AppGlobalProvider } from "./components/AppGlobalProvider";
 import { AppBar } from "./components/AppBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { CssBaseline, Toolbar } from "@mui/material";
-import { FamilyBlogList } from "./pages/FamilyBlogList";
+import { FamilyMemoList } from "./pages/FamilyMemoList";
 import AppDrawer from "./components/AppDrawer/AppDrawer";
 import { MdViewPage } from "./pages/MdViewPage";
 
@@ -34,9 +34,9 @@ export default function App() {
               <Toolbar />
 
               <Routes>
-                <Route path="/" element={<FamilyBlogList />} />
+                <Route path="/" element={<FamilyMemoList />} />
                 <Route path="/md/*" element={<MdViewPage />} />
-                <Route path="/mem/:tag" element={<FamilyBlogList />} />
+                <Route path="/mem/:tag" element={<FamilyMemoList />} />
               </Routes>
             </Box>
           </Box>

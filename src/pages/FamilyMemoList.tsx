@@ -1,32 +1,32 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 
-import { BlogConfig } from "../components/Config/BlogsConfig";
+import { MemosConfig } from "../components/Config/MemosConfig";
 import { Markdown } from "../components/Markdown";
 import { Divider, List, ListItem } from "@mui/material";
 import { useParams } from "react-router-dom";
 
-export const FamilyBlogList = () => {
+export const FamilyMemoList = () => {
   const { tag } = useParams();
-  const blogsList = useMemo(() => {
-    let blogsList = BlogConfig.blogs;
+  const memosList = useMemo(() => {
+    let memosList = MemosConfig.memos;
     if (tag) {
-      blogsList = blogsList.filter(
-        (blog) => blog.tags.filter((t) => t === tag).length > 0
+      memosList = memosList.filter(
+        (memo) => memo.tags.filter((t) => t === tag).length > 0
       );
     }
-    return blogsList;
+    return memosList;
   }, [tag]);
 
   return (
     <List>
-      {blogsList.map((mdFile, index) => (
+      {memosList.map((mdFile, index) => (
         <React.Fragment key={index}>
           <ListItem
             style={{ backgroundColor: index % 2 === 0 ? "lightgrey" : "white" }}
           >
             <Markdown file={mdFile.md} />
           </ListItem>
-          {index !== blogsList.length - 1 && <Divider />}
+          {index !== memosList.length - 1 && <Divider />}
         </React.Fragment>
       ))}
     </List>

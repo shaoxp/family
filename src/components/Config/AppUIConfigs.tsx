@@ -1,7 +1,7 @@
 import FlightIcon from "@mui/icons-material/Flight";
 import FlagIcon from "@mui/icons-material/Flag";
 
-export const BlogTags = {
+export const MemoTags = {
   travel: {
     icon: <FlightIcon />,
     name: "旅行",
@@ -12,4 +12,4 @@ export const BlogTags = {
   },
 };
 
-export type BlogTagKeys = keyof typeof BlogTags;
+export type MemoTagKeys = keyof typeof MemoTags;
