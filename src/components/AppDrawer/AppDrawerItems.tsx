@@ -48,13 +48,13 @@ export const SecondaryListItems = () => {
       {/* <ListSubheader component="div" inset>
       Saved reports
     </ListSubheader> */}
-      <ListItemButton onClick={() => navigate("/md/mds/文曲星奖.md")}>
+      <ListItemButton onClick={() => navigate("/md/mds/文曲星奖")}>
         <ListItemIcon>
           <EmojiEventsIcon />
         </ListItemIcon>
         <ListItemText primary="文曲星奖" />
       </ListItemButton>
-      <ListItemButton onClick={() => navigate("/md/mds/家族成员.md")}>
+      <ListItemButton onClick={() => navigate("/md/mds/家族成员")}>
         <ListItemIcon>
           <Diversity1Icon />
         </ListItemIcon>

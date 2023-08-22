@@ -8,7 +8,7 @@ export const MdViewPage = () => {
   if (mdFile) {
     return (
       <Box p={2} m={1}>
-        <Markdown file={`/${mdFile}`}></Markdown>
+        <Markdown file={`/${mdFile}.md`}></Markdown>
       </Box>
     );
   } else {

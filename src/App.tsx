@@ -38,11 +38,11 @@ export default function App() {
                 <Route path="/md/*" element={<MdViewPage />} />
                 <Route path="/mem/:tag" element={<FamilyMemoList />} />
               </Routes>
+              <StickyFooter />
             </Box>
           </Box>
         </Router>
       </AppGlobalProvider>
-      <StickyFooter />
     </ThemeProvider>
   );
 }

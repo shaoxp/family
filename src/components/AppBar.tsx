@@ -68,7 +68,7 @@ export function AppBar(prop: AppProps) {
         </Typography>
         <IconButton
           color="inherit"
-          onClick={() => navigate("/md/mds/更新历史.md")}
+          onClick={() => navigate("/md/mds/更新历史")}
         >
           <Badge badgeContent={1} color="secondary">
             <NotificationsIcon />

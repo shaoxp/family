@@ -24,7 +24,7 @@ export const FamilyMemoList = () => {
           <ListItem
             style={{ backgroundColor: index % 2 === 0 ? "lightgrey" : "white" }}
           >
-            <Markdown file={mdFile.md} />
+            <Markdown file={`${mdFile.md}`} />
           </ListItem>
           {index !== memosList.length - 1 && <Divider />}
         </React.Fragment>
