@@ -1,6 +1,6 @@
 {
   "name": "family",
-  "homepage": "https://shaoxp.github.io/family/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
