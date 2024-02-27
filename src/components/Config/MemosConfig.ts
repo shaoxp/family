@@ -23,9 +23,7 @@ export const MemosConfig = {
     {
       md: "/mds/memos/20230623-苏州一日游.md",
       tags: ["travel"]
-    },
-   
-    
+    }  
   ],
 };
 
