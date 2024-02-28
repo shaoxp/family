@@ -20,6 +20,10 @@ export const MemosConfig = {
       md: "/mds/memos/20240124-简单6上期末文曲星奖.md",
       tags: ["event"]
     }, 
+    {
+      md: "/mds/memos/投资-2024-02-27.md",
+      tags: ["invest"]
+    },
   ],
 };
 
