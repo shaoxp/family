@@ -15,7 +15,11 @@ export const MemosConfig = {
     {
       md: "/mds/memos/20230623-苏州一日游.md",
       tags: ["travel"]
-    }  
+    },
+    {
+      md: "/mds/memos/20240124-简单6上期末文曲星奖.md",
+      tags: ["event"]
+    }, 
   ],
 };
 
