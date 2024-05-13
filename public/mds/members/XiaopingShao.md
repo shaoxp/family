@@ -1,8 +1,8 @@
 # Xiaoping Shao
-Shanghai | shaoxp@simplenature.cn | 13816756087 | www.linkedin.com/in/shaoxp/ | github.com/shaoxp
+Shanghai | shaoxp@simplenature.cn | 13816756087 | 1983-08-22 | github.com/shaoxp
 
 ## Summary
-- Xiaoping has experience with multiple platforms, complex systems, and multiple languages. He has about 7+ years of cloud experience, 3+ years of front-end experience, 3+ years of native Android experience, and 5+ years of professional software industry experience.
+- Xiaoping has rich experience in cloud computing and cad/graphcis. he has lots of experience and love to build systems from zero. he worked on multiple platforms, complex systems, and multiple languages. He has about 7+ years of cloud experience, 3+ years of front-end experience, 3+ years of native Android experience, and 5+ years of professional software industry experience.
 - The languages he has used are varied, including C++ (5+ years), Java (4+ years), C# (4+ years), JavaScript (3+ years), Rust (about 1 year), Dart (about 0.5 years), and some ad-hoc Shell and Python experience. Currently, his favorites are Rust, JavaScript, Python, and C++.
 - He uses many cloud providers including Azure, Aliyun, Huawei Cloud, and Google Cloud. He understands most of the cloud infrastructure and appreciates Docker and Kubernetes. He has strong and complex data processing experience in the cloud.
 - Before cloud development, most of his work was related to graphics systems. He understands rendering, shaders, and GL topics. He has extensive experience in CAD direct modeling systems, understanding key concepts and topology. He also has about 2 years of image processing experience, working on the framework layer, and has extensive experience in performance tuning and improvement for native and managed memory or CPU/time.
