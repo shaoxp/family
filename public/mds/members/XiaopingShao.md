@@ -1,6 +1,6 @@
 ## Shao Xiaoping
-Male | Age: 40 | Phone: 13816756087 | Email: xaopng.shao@gmail.com  
-16 years of experience | Master’s Degree | Job Objective: Architect/Technical Manager | Preferred Location: Shanghai
+Male | Age: 40 | Phone: 13816756087 | Email: xaopng.shao@gmail.com ｜ 16 years of experience  
+Master’s Degree | Job Objective: Architect/Technical Manager | Preferred Location: Shanghai
 
 ---
 
