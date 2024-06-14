@@ -25,8 +25,9 @@ Achievements:
 - Significantly improved and stabilized the IoT Pipeline, greatly reducing the fault rate.
 - Timely completed important challenging features, such as the Sensor Formula in the IoT system and the universal data modification tracking feature in the MES system.
 
-Technical Keywords:
-- React/Redux, TypeScript, ProtoBuf, Temporal, Flink, Kafka, Apache Kafka Stream, Node.js, ActiveMQ, Elasticsearch, Python
+Technically:
+- We use React/Redux with TypeScript as our frontend framework, most of our backend service is build with nodejs and go with gRPC + gRPC Gateway for restapi. we use Temporal as our async tasks engineing, we also use Kedar to schedule adhoc tool. at data layer, we mainly use MongoDB to store our data, our data schema is defined by application with Protobuf.
+- On IOT side, we use MTConnect running in edge gateway to collect sensor data and sent to kafka, we used  Flink and  Apache Kafka Stream as our stream processing engine. some of enrich  for sensor data is processed by RxJx. the realtime data is exposed with websocket with  ActiveMQ to front end and stored in Elasticsearch for future analytics and statistics usage.
 
 ---
 ### Entrepreneurship, Partner, 2021/05-2022/04
@@ -38,8 +39,8 @@ Achievements:
 - Deployed our stock analysis program on Google Cloud, gaining about 40 annual paying users.
 - Also released a WeChat mini-program for book quotes, facilitating book annotations with voice input support.
 
-Technical Keywords:
-- Rust (Rocket), Flutter, MySQL, Google Cloud, Google Firebase, Stripe, WeChat SDK, OTS, OSS, Alibaba Cloud
+Technically 
+- we use Flutter as framework to build our App, firstly we released our Web application. the back end api is using Rust (Rocket). our data is stored in MySQL after processed by our daily scheduler job written by Python. our system is deployed in Google Cloud. we used Google Firebase to integrate Google account, and integrated with Stripe to support our subscription billing. we used the Google cloud's CI/CD support with github to automatically deploy after changes on release branch.
 
 ---
 ### Glodon Company Limited, Technical Expert, 2019.1-2021/5
@@ -52,8 +53,8 @@ Achievements:
 - Launched the BIM data collaboration platform (https://gteam.glodon.com/) from scratch, finished the national project requirement of 1000 concurrent users.
 - An invention patent: Structured management method, device, computer equipment, and storage medium for BIM data. (CN202110074818.8)
 
-Technical Keywords:
-- K8S, SpringBoot, HBase/OTS, MySQL, OSS, Redis, RabbitMQ, Node.js, Three.js, C++, Alibaba Cloud/Huawei Cloud
+Technically:
+- our Platform exposed public apis throught our API Gatway to our clients, it consistent serveral micro services that run in K8S, we integrated with company account and authentication/authorizaton service. our clients including 3 professional destkop applicatiosn and a web application to manage the BIM project data. our api services is written in SpringBoot, the data is feed into HBase/OTS for BIM element data and MySQL for project data and meta data. we used OSS to store our block data. we use Redis as cache to boost performance. also we use RabbitMQ as message broke to support our async save/write operation to database.in the frontend we used Three.js to render the model.we also provide C++ SDK to aid our desktop clients. the system is first deployed in Alibaba Cloud then switch to Huawei Cloud because of company level strategy.
 
 ---
 ### Microsoft (China), Senior Software Engineer, 2015.12-2019/1
@@ -64,8 +65,8 @@ Achievements:
 - Processed approximately 2T of log data daily. 
 - Peak bandwidth was about 1-2T, distributed to about 5 CDN providers. We invented and developed "Intelligent CDN."
 
-Technical Keywords:
-- C# (MVC.net), Azure TableStore, Azure Blob, Azure Message, ElasticSearch, coreDNS
+Technically
+- we use MVC.NET Web as our service and MVC.NET Worker as our async process for data transform. traffic and  monitor data is stored into Azure TableStore in v1 and migrated into Mysql in V2 and Migrated into ClickHouse in V3 to gain good performance for Groupby aggregation, Log data is saved into Elasticsearch. we integrated with Microsoft internal Geneva system for monitoring. we used Azure Blob to save our block data, and use Azure Message to aid our async data transform. for global load balancer for Azure China CDNk, we use coreDNS to server based on our rule for traffic manager for our domains. we also integrated with IPIP to enrich our data from ip and Tingyun to bring external monitor data.
 
 ---
 ### Autodesk (China) , (Senior) Software Engineer, 2008.1-2015/12
@@ -79,8 +80,9 @@ Achievements:
 - Built and released Publisher and Fusion from scratch, going through TP, Alpha, Beta, and production cycles. My work was highly praised by American leadership.
 - SketchBook gained the first 1 million users, and Pixlr gained the first 10 million users. My work significantly improved software performance.
 
-Technical Keywords:
-- C#, C++, ASM/ACIS, Graphics (Rendering/Modeling), Java, Android, Image Processing, Cross-platform Development
+Technically Keywords:
+- I start to use C# and C++ to do real professional project. i like C++ and feel very confortable to use it. i understand Rendering Scene Graph, i built different geometry node and apply different trasform and different effects according to requiremnts. e.g. billboard attribute to let text always face client, let annotation keep static size when zoom, add hilight effect or manipulator to it. support HUD ui etc. i also master basics for direct modeling on BREP with ASM/ACIS, e.g. Extrude, Fillet, Revolve etc. i also unerstand enitty tracking for the modeling.
+- i also works on Android for about 4 years, i used Surface as the main canvas to render image for sketchbook and support tile based refresh for it. i also support Image Processing and live cameral with GL shader and worked on Cross-platform Development layer with C++.
 
 ---
 
